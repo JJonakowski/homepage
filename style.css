@@ -1,0 +1,23 @@
+body {
+
+    background:  #72A0C1;
+    font-family: Georgia, Arial, Helvetica;
+}
+
+#xp {
+    background-color: red;
+}
+
+.mainHeader {
+color: blue;
+}
+
+.whoYou {
+color:brown;
+}
+
+.sectionHeader {
+font-size: 20px;
+color: green;
+background-color: gold;
+}
