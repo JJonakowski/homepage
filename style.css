@@ -1,23 +1,57 @@
 body {
-
-    background:  rgb(62, 99, 80);
+    background:  rgb(170, 177, 173);
     font-family: Georgia, Arial, Helvetica;
 }
 
-#xp {
-    background-color: red;
+.main {
+    width: 700px;
+    max-width: 100%;
+    margin: 0px auto;
+    padding-top: 20px;
+    }
+
+.main__header {
+    color: blue;
 }
 
-.mainHeader {
-color: blue;
+.main__who-me {
+    color: blue;
 }
 
-.whoYou {
-color:brown;
+.navigation__link {
+    color: black;
 }
 
-.sectionHeader {
-font-size: 20px;
-color: green;
-background-color: gold;
+.education__header, .certifications__header, .experience__header, .skills__header, .hobby__header {
+    font-size: 20px;
+    color: darkgreen;
+    margin-bottom: 30px;
+    clear: left;
+}    
+
+.top__header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background:  white;
+    padding: 1px 1px 1px 10px;
+}
+
+.go__top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: red;
+}
+
+.education__picture {
+    width: 100%;
+    max-width: 60px;
+    display: block; 
+    float: left;
+    margin: 0 15px 15px 0;
+
 }
