@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>xxxxxxxxxxxxxxxxxxxxxxx</title>
-  <link rel="stylesheet" type="text/css" href="style-zad2.css">
+  <link rel="stylesheet" type="text/css" href="style-zad2.css" />
 </head>
 
 <body>
@@ -17,8 +17,7 @@
   <p>Ka<sup>s</sup>ia</p>
 
   <a href="#sekcja1"> Na sam dół</a>
-
-  </div>
+    
 </div>
 
 <div class="content">
@@ -42,5 +41,7 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
+  </div>
+  
 </body>
 </html>
