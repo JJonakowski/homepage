@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"> 
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header class="top__header">
-        <a class="navigation__link" href="indexwtf.html">Strona główna</a>
-        <a class="navigation__link" href="podstrona.html">Podstrona</a>
+        <nav class="navigation">
+            <ul class="navigation__link">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="indexwtf.html">Strona główna</a></li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main">
@@ -31,7 +38,8 @@
         <section class="education education--js">
             <h3 class="education__header">Wykształcenie</h3>
             <img src="tatu.JPG" alt="tatu" class="education__picture">
-            <p class="education__list">2002 – 2007 Politechnika Krakowska Studia inżynierskie na Wydziale Fizyki Technicznej i Modelowania
+            <p class="education__list">2002 – 2007 Politechnika Krakowska Studia inżynierskie na Wydziale Fizyki
+                Technicznej i Modelowania
                 Komputerowego. Kierunek: informatyka.
                 <br>
                 1998 – 2002 Liceum Ogólnokształcące nr III im. Oskara Langego w Nowym Sączu Klasa poszerzona o profilu
@@ -41,16 +49,21 @@
         <section class="certifications">
             <h3 class="certifications__header">Kursy, certyfikaty</h3>
             <p>
-                Avocent: Basic Technical and Sales Training <br>
-                HP: Accredited Presales Professional HP SMB Solutions <br>
-                HP: Accredited Sales Professional ProCurve Networking <br>
-                Microsoft Licensing Specialist <br>
-                Microsoft Volume License Solutions to Small and Medium Business <br>
-                Polycom: Voice over IP (VoIP) Sales Training <br>
-                Polycom: Voice over IP (VoIP) Pre-Sales Technical Certification <br>
-                Polycom: Video Solutions Pre-Sales Technical Training <br>
-                Polycom: Video Solutions Sales Training <br>
-                PRINCE2
+                <ul class="certyfications__list">
+                    <li>Avocent: Basic Technical and Sales Training</li>
+                    <li>HP: Accredited Presales Professional HP SMB Solutions</li>
+                    <li>HP: Accredited Sales Professional ProCurve Networking</li>
+                    <li>Microsoft Licensing Specialist</li>
+                    <li>Microsoft Volume License Solutions to Small and Medium Business</li>
+                    <li>Polycom: Voice over IP (VoIP) Sales Training </li>
+                </ul>
+
+                <ol class="certyfications__list">
+                    <li>Polycom: Voice over IP (VoIP) Pre-Sales Technical Certification</li>
+                    <li>Polycom: Video Solutions Pre-Sales Technical Training</li>
+                    <li>Polycom: Video Solutions Sales Training</li>
+                    <li>PRINCE2</li>
+                </ol>
             </p>
         </section>
 
@@ -70,13 +83,39 @@
             <h3 class="hobby__header">Zainteresowania/hobby</h3>
             <p>Kasia!</p> <br>
         </section>
+
+        <section class="table">
+            <h3 class="table__header">Test tabeli</h3>
+            <table class="table__body">
+                <caption> </caption>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Ilość godzin</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>01.07.2019</td>
+                        <td>10,5</td>
+                    </tr>
+                    <tr>
+                            <td>02.07.2019</td>
+                            <td>9</td>
+                        </tr>
+                </tbody>
+            </table>
+           
+        </section>
+
     </main>
 
     <footer>
         <a href="#top" class="go__top">Na górę</a>
         To jest strona testowa</footer>
 
-<script src="script.js"> </script>
+    <script src="script.js"> </script>
 
 </body>
 
