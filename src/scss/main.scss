@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
 html {
   box-sizing: border-box;
@@ -11,13 +11,14 @@ html {
 }
 
 body {
-  background: rgb(99, 95, 163);
+  background: rgb(136, 135, 148);
   font-family: Georgia, Arial, Helvetica;
 }
 
 .certyfications__list {
   list-style: none;
   padding: 0;
+  font-family: 'Indie Flower', cursive;
 }
 
 .content_header::before {
@@ -45,6 +46,13 @@ body {
     float: left;
     margin: 0 15px 15px 0;
   }
+  &__list {
+    font-family: 'Indie Flower', cursive;
+  }
+}
+
+.experience__list {
+  font-family: 'Indie Flower', cursive;
 }
 
 .education__header, .certifications__header, .experience__header, .skills__header, .hobby__header, .table__header {
@@ -83,6 +91,10 @@ body {
   }
 }
 
+.hobby__list {
+  font-family: 'Indie Flower', cursive;
+}
+
 .main {
   width: 700px;
   max-width: 100%;
@@ -97,6 +109,7 @@ body {
     color: rgb(0, 0, 0);
     grid-area: header;
     text-align: center;
+    font-family: 'Indie Flower', cursive;
   }  
   &__who-me {
     color: rgb(0, 0, 0);
@@ -111,6 +124,7 @@ body {
   &__link {
     text-decoration: none;
     margin: 10px;
+    font-family: 'Indie Flower', cursive;
     &:hover {
     color:red;
     }
@@ -127,6 +141,10 @@ body {
   &__item {
     display: inline;
   }
+}
+
+.skills__list {
+  font-family: 'Indie Flower', cursive;
 }
 
 .table {
