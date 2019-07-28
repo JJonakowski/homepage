@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -316,12 +317,13 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #635fa3;
+  background: #888794;
   font-family: Georgia, Arial, Helvetica; }
 
 .certyfications__list {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Indie Flower', cursive; }
 
 .content_header::before {
   content: "";
@@ -344,6 +346,12 @@ body {
   display: block;
   float: left;
   margin: 0 15px 15px 0; }
+
+.education__list {
+  font-family: 'Indie Flower', cursive; }
+
+.experience__list {
+  font-family: 'Indie Flower', cursive; }
 
 .education__header, .certifications__header, .experience__header, .skills__header, .hobby__header, .table__header {
   font-size: 20px;
@@ -381,6 +389,9 @@ body {
   .header__button:focus {
     border: 3px solid red; }
 
+.hobby__list {
+  font-family: 'Indie Flower', cursive; }
+
 .main {
   width: 700px;
   max-width: 100%;
@@ -397,7 +408,8 @@ body {
     -ms-grid-column-span: 3;
     color: black;
     grid-area: header;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Indie Flower', cursive; }
   .main__who-me {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
@@ -408,7 +420,8 @@ body {
 
 .navigation__link {
   text-decoration: none;
-  margin: 10px; }
+  margin: 10px;
+  font-family: 'Indie Flower', cursive; }
   .navigation__link:hover {
     color: red; }
   .navigation__link:visited {
@@ -426,6 +439,9 @@ body {
 
 .navigation__item {
   display: inline; }
+
+.skills__list {
+  font-family: 'Indie Flower', cursive; }
 
 .table {
   -ms-grid-row: 3;
