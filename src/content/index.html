@@ -12,11 +12,11 @@
 <body>
     <header class="top__header">
         <nav class="navigation">
-            <ul class="navigation__list navigation__list--js">
+            <ul class="navigation__list navigation__list navigation__list--js">
                 <li class="navigation__item">
-                    <a class="navigation__link" href="indexwtf.html">Strona główna</a></li>
+                    <a class="navigation__link" href="index.html">Strona główna</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+                    <a class="navigation__link" href="edytor.html">Edytor</a></li>
                 <li class="navigation__item">
                     <a class="navigation__link" href="indexwtf.html">Strona główna</a></li>
                 <li class="navigation__item">
@@ -48,8 +48,8 @@
                     <p>
                         2002 – 2007 Politechnika Krakowska Studia inżynierskie na Wydziale Fizyki
                         Technicznej i Modelowania
-                        Komputerowego. Kierunek: informatyka.</li>
-
+                        Komputerowego. Kierunek: informatyka.</p>
+                    <p>
                         1998 – 2002 Liceum Ogólnokształcące nr III im. Oskara Langego w Nowym Sączu Klasa poszerzona o
                         profilu
                         informatycznym
@@ -99,10 +99,34 @@
             <section class="hobby">
                 <h3 class="hobby__header content_header">Zainteresowania/hobby</h3>
                 <article class="hobby__list">
-                <p>Kasia!</p>
+                    <p>Kasia!</p>
                 </article>
             </section>
+
+            <!-- cookies  -->
+            <section>
+                <h3 class="input__header content_header">Zapisz w cookies:</h3>
+                <input class="input input--js">
+            </section>
+
+
+            <!-- Edytor -->
+            <section class="form">
+                <p>
+                    <label for="textarea" class="form__label">Zapisz / odśwież?</label><br>
+                    <textarea id="textarea" name="textarea" class="form__msg form__msg--box form__msg--box--js"></textarea>
+                </p>
+                
+                <div class="form__actions"> 
+                    <button class="form__button form__button--save--js">Save</button>
+                    <button class="form__button form__button--load--js">Load</button>
+                    <button class="form__button form__button--delete--js">Delete</button>
+                </div>
+            </section>
+
         </div>
+
+        <!-- tabela -->
         <section class="table">
             <h3 class="table__header content_header">Test tabeli</h3>
             <table class="table__body">
@@ -127,7 +151,6 @@
             </table>
 
         </section>
-
     </main>
 
     <footer class="footer">
