@@ -3,12 +3,43 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 
+@keyframes animatedBcgrd {
+  0% {
+    background: green;
+    transform: scale(1);
+  }
+  25% {
+    background: yellow;
+    transform: scale(1.2);
+  }
+  50% {
+    background: red;
+    transform: scale(1);
+  }
+  75% {
+    background: blue;
+    transform: scale(1.2);
+  }
+  100% {
+    background: green;
+    transform: scale(1);
+  }
+}
+
 html {
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+.animation {
+  border-radius: 100px;
+  margin: 50px;
+  height: 80px;
+  width: 80px;
+  animation: animatedBcgrd 5s ease-in-out infinite;
 }
 
 body {
@@ -46,6 +77,9 @@ body {
     display: block; 
     float: left;
     margin: 0 15px 15px 0;
+    &:hover {
+    transform: scale(6);
+    }
   }
   &__list {
     font-family: 'Indie Flower', cursive;
@@ -77,17 +111,25 @@ body {
     font-size: 30px;
   }
   &__msg {
-      height: 300px;
-      min-width: 400px;
+      height: 200px;
+      min-width: 350px;
       font-size: 18px;
       padding: 10px;
   }
   &__button {
+    border: none;
     height: 50px;
     min-width: 100px;
     font-size: 30px;
+    background: rgb(192, 188, 188);
+    transition: transform .9s linear, background .5s linear;
+    will-change: background;
+    &:hover {
+      transform: scale(1.2);
+      background: red;
     }
   }
+}
 
 .go__top {
   position: fixed;

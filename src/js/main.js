@@ -28,6 +28,7 @@ button.addEventListener('click', (e) => { //e pokazuje wszystkie szczegoly eleme
 // Hamburger menu
 
 const navigationSwitch = document.querySelector('.navigation__switch--js');
+
 navigationSwitch.addEventListener('click', (e) => {
     const navigationList = document.querySelector('.navigation__list--js');
     navigationList.classList.toggle('navigation__list--visible');
@@ -59,11 +60,14 @@ save.addEventListener('click', (e) => {
 
 load.addEventListener('click', (e) => {
   e.preventDefault();
-  area.innerHTML = localStorage.getItem('area');
+    area.value = localStorage.getItem('area'); 
+  //area.innerHTML = localStorage.getItem('area');
 })
 
 del.addEventListener('click', (e) => {
+  e.preventDefault();
   localStorage.removeItem('area');
+  area.value = null;
 })
 
 //-- --
